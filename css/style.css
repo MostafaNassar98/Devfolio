@@ -1,0 +1,451 @@
+/* =========== start global =========== */
+*{
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#0078FF;
+}
+/* =========== end global =========== */
+/* =========== start main-title =========== */
+.main-title{
+    text-align: center;
+    margin-top: 30px;
+}
+.main-title h2{
+    font-weight: 700;
+    font-size: 50px;
+}
+.main-title p{
+    position: relative;
+    padding-bottom: 15px;
+}
+.main-title p::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    background-color: var(--main-color);
+    width: 40px;
+    height: 5px;
+}
+/* =========== end main-title =========== */
+/* =========== start navbar =========== */
+.nav-link{
+    position: relative;
+    padding-left: unset !important;
+    padding-right: 20px !important;
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 0px;
+    height: 3px;
+    background-color: white;
+    transition: 0.5s;
+}
+.nav-link.active::before{
+    width: 40px;
+}
+/* =========== end navbar =========== */
+/* =========== start home =========== */
+.home{
+    background-image: url(../images/home.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.home .layer{
+    background-color: rgba(0, 0, 0, 0.642);
+    height: 100%;
+}
+
+.home .text .developer::after{
+    content: "|";
+    animation-name: typing ;
+    animation-direction: alternate;
+    animation-duration: 8s;
+    font-size: 50px;
+}
+@keyframes typing {
+    0% {
+        content: " |";
+    }
+
+    2% {
+        content: " F|";
+    }
+
+    4% {
+        content: " Fr|";
+    }
+
+    6% {
+        content: " Fre|";
+    }
+
+    8% {
+        content: " Free|";
+    }
+
+    10% {
+        content: " Freel|";
+    }
+
+    12% {
+        content: " Freela|";
+    }
+
+    14% {
+        content: " Freelan|";
+    }
+
+    16% {
+        content: " Freelanc|";
+    }
+
+    18% {
+        content: " Freelance|";
+    }
+
+    20% {
+        content: " Freelancer|";
+    }
+
+    22% {
+        content: " Freelance|";
+    }
+
+    23% {
+        content: " Freelanc|";
+    }
+
+    24% {
+        content: " Freelan|";
+    }
+
+    26% {
+        content: " Freela|";
+    }
+
+    28% {
+        content: " Freel|";
+    }
+
+    30% {
+        content: " Free|";
+    }
+
+    32% {
+        content: " Fre|";
+    }
+
+    34% {
+        content: " Fr|";
+    }
+
+    36% {
+        content: " F|";
+    }
+
+    38% {
+        content: " |";
+    }
+
+    40% {
+        content: " D|";
+    }
+
+    42% {
+        content: " De|";
+    }
+
+    44% {
+        content: " Dev|";
+    }
+
+    46% {
+        content: " Deve|";
+    }
+
+    48% {
+        content: " Devel|";
+    }
+
+    50% {
+        content: " Develo|";
+    }
+
+    52% {
+        content: " Develop|";
+    }
+
+    54% {
+        content: " Develope|";
+    }
+
+    56% {
+        content: " Developer|";
+    }
+
+    58% {
+        content: " Develope|";
+    }
+
+    60% {
+        content: " Develop|";
+    }
+
+    62% {
+        content: " Develo|";
+    }
+
+    64% {
+        content: " Devel|";
+    }
+
+    66% {
+        content: " Deve|";
+    }
+
+    68% {
+        content: " Dev|";
+    }
+
+    70% {
+        content: " De|";
+    }
+
+    72% {
+        content: " D|";
+    }
+
+    74% {
+        content: " |";
+    }
+
+    75% {
+        content: " P|";
+    }
+
+    76% {
+        content: " Ph|";
+    }
+
+    77% {
+        content: " Pho|";
+    }
+
+    78% {
+        content: " Phot|";
+    }
+
+    79% {
+        content: " Photo|";
+    }
+
+    80% {
+        content: " Photog|";
+    }
+
+    81% {
+        content: " Photogr|";
+    }
+
+    81% {
+        content: " Photogra|";
+    }
+
+    82% {
+        content: " Photograp|";
+    }
+
+    83% {
+        content: " Photograph|";
+    }
+
+    84% {
+        content: " Photographe|";
+    }
+
+    85% {
+        content: " Photographer|";
+    }
+
+    86% {
+        content: " Photographe|";
+    }
+
+    87% {
+        content: " Photograph|";
+    }
+
+    88% {
+        content: " Photograp|";
+    }
+
+    89% {
+        content: " Photogra|";
+    }
+
+    90% {
+        content: " Photogr|";
+    }
+
+    91% {
+        content: " Photog|";
+    }
+
+    92% {
+        content: " Photo|";
+    }
+
+    93% {
+        content: " Phot|";
+    }
+
+    94% {
+        content: " Pho|";
+    }
+
+    95% {
+        content: " Ph|";
+    }
+
+    98% {
+        content: " P|";
+    }
+
+    100% {
+        content: " |";
+    }
+}
+/* =========== end home =========== */
+/* =========== start about =========== */
+.about-area .About-me{
+    position: relative;
+}
+.about-area .About-me::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: var(--main-color);
+    top: 100%;
+    left: 0px;
+}
+/* =========== end about =========== */
+/* =========== start services =========== */
+.services .card .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 30px;
+    box-shadow: 0 0 0 10px var(--main-color);
+    margin-bottom: 15px;
+}
+.services .card .icon:hover{
+    color: white;
+    box-shadow: 0 0 0 10px rgba(47, 47, 132, 0.422);
+    background-color: var(--main-color);
+}
+.services .counter{
+    background-image: url(../images/counters-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+}
+.services .counter .layer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+.services .counter .layer span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin: 10px auto;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px var(--main-color);
+}
+/* =========== end services =========== */
+/* =========== start portfolio =========== */
+.portfolio .card img{
+    transition: transform 1s;
+}
+.portfolio .card:hover img{
+    transform: scale(1.5);    
+}
+/* =========== end portfolio =========== */
+/* =========== start slider =========== */
+.slider{
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 100%;
+    margin-top: 20px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-indent: unset;
+}
+.carousel-indicators{
+    bottom: -80px;
+}
+/* =========== end slider =========== */
+/* =========== start contact =========== */
+.contact{
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 87vh;
+    width: 100%;
+}
+.contact .icons{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.contact ul.icons li{
+    margin-right: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid var(--main-color);
+}
+.contact ul.icons li:hover{
+    background-color: var(--main-color);
+    border: none;
+}
+/* =========== end contact =========== */
+/* =========== start copywrite  =========== */
+.copywrite {
+    background: var(--main-color);
+    width: 100%;
+    height: 10vh;
+    color: white;
+}
+/* =========== end ccopywrite  =========== */
